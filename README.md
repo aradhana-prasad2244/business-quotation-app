@@ -72,7 +72,7 @@ This project was created to simplify the process of creating business quotations
 
 ## Live Demo
 
-Coming soon.
+[View Live Demo] (https://business-quotation-app.netlify.app/)
 
 ## Author
 
