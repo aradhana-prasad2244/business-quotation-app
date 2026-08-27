@@ -164,7 +164,7 @@ function saveQuotation() {
 }
 
 const signatureImage = new Image();
-signatureImage.src = "/assets/signature.png";
+signatureImage.src = "/signature.png";
 
 // Download Pdf
 let downloadPdf = document.querySelector("#download-pdf");
