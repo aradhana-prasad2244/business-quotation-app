@@ -1,142 +1,214 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+
+
+<title>Business Quotation App</title>
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Remix Icons -->
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+
   </head>
 
   <body>
-    <header>
+    <!-- ================= HEADER ================= -->
 
-      <div id="contact">Mobile : 
-        9167272509
-      </div>
-      <div id="details">
-        <h1>ARADHANA ENGINEERING WORKS</h1>
-        <h2>Machinist & Fabricators</h2>
-        <div id="upperPara">
-          <p>
-            Specialist in : Spares in Machinery and Equipments, Foundation
-            Bolts, Flanges, Studs Etc.
-          </p>
-          <p>We undertake Project Work and Plant Maintenance</p>
+<header>
+  <div id="contact">
+    Mobile : 9167272509
+  </div>
+
+  <div id="details">
+    <h1>ARADHANA ENGINEERING WORKS</h1>
+
+    <h2>Machinist & Fabricators</h2>
+
+    <div id="upperPara">
+      <p>
+        Specialist in : Spares in Machinery and Equipments, Foundation
+        Bolts, Flanges, Studs Etc.
+      </p>
+
+      <p>We undertake Project Work and Plant Maintenance</p>
+    </div>
+
+    <hr />
+    <hr />
+
+    <div id="lowerPara">
+      <p>
+        Works : 24, Lotlikar Compound, Behind Hindalco Ltd., MIDC Taloja,
+        Dist : Raigad
+      </p>
+
+      <p>Email : aradhanaenggworks55@gmail.com</p>
+    </div>
+
+    <hr />
+    <hr />
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+
+<main>
+  <!-- Reference Number & Date -->
+
+  <div id="info">
+    <label for="number">
+      Ref. No.
+      <input
+        type="text"
+        name="number"
+        id="number"
+        placeholder="0"
+      />
+    </label>
+
+    <label for="date">
+      Date :
+      <input
+        type="date"
+        name="date"
+        id="date"
+      />
+    </label>
+  </div>
+
+  <!-- Address -->
+
+  <div id="Address">
+    <textarea
+      id="address"
+      rows="5"
+      cols="30"
+      placeholder="To,"
+    ></textarea>
+  </div>
+
+  <!-- Subject -->
+
+  <div id="subject">
+    <textarea
+      id="userSub"
+      cols="100"
+      rows="5"
+      placeholder="Add Your Subject line"
+    >Sub:- </textarea>
+  </div>
+
+  <!-- ================= QUOTATION TABLE ================= -->
+
+  <div id="Dets">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Content</th>
+          <th>Quantity</th>
+          <th>Charges</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody class="tableRow"></tbody>
+    </table>
+
+    <!-- Total -->
+
+    <h3>
+      Total : ₹<span id="total">0</span>
+    </h3>
+
+    <!-- Add Row -->
+
+    <svg
+      id="add-row"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="currentColor"
+    >
+      <path
+        d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+      ></path>
+    </svg>
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+  <div>
+    <div id="footer-para1">
+      Thanking You,
+    </div>
+
+    <div id="footer-para2">
+      <div id="text">
+        <div id="text-1">
+          Your Faithfully,
         </div>
-        <hr />
-        <hr />
-        <div id="lowerPara">
-          <p>
-            Works : 24, Lotlikar Compound, Behind Hindalco Ltd., MIDC Taloja,
-            Dist : Raigad
-          </p>
-          <p>Email : aradhanaenggworks55@gmail.com</p>
+
+        <div id="text-2">
+          For Aradhana Engineering Work
         </div>
-        <hr />
-        <hr />
-      </div>
-    </header>
-
-    <main>
-      <div id="info">
-        <label for="number">
-          Ref. No.
-          <input type="" name="number" id="number" placeholder="0"/>
-        </label>
-        <label for="date">
-          Date :
-          <input type="date" name="date" id="date" />
-        </label>
       </div>
 
-      <div id="Address">
-        <textarea
-          id="address"
-          rows="5"
-          cols="30"
-          placeholder="To,"
-        ></textarea>
+      <div id="img">
+        <img
+          src="/signature.png"
+          alt="signature"
+        />
       </div>
 
-      <div id="subject">
-        <textarea
-          id="userSub"
-          cols="100"
-          rows="5"
-          placeholder="Add Your Subject line"
-        >Sub:- </textarea>
-      </div>
+      <p>Proprietor</p>
+    </div>
+  </div>
 
-      <div id="Dets">
-        <table>
-          <thead>
-            <tr>
-            <th>No.</th>
-            <th>Content</th>
-            <th>Charges</th>
-            <th>Price</th>
-          </tr>
-        </thead>
+  <!-- Download PDF -->
 
-          <tbody class="tableRow">
-          </tbody>
-
-        </table>
-        <h3>Total : ₹<span id="total">0</span></h3>
+  <div>
+    <div id="download-pdf">
+      <h4>
         <svg
-          id="add-row"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          width="24"
-          height="24"
+          width="22"
+          height="22"
           fill="currentColor"
+          class="download"
         >
-          <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+          <path
+            d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 20.9925V2.9918Z"
+          ></path>
         </svg>
-      </div>
-    </main>
 
-    <footer>
-      <div>
-        <div id="footer-para1">Thanking You,</div>
-        <div id="footer-para2">
-          <div id="text">
-            <div id="text-1">Your Faithfully,</div>
-            <div id="text-2">For Aradhana Engineering Work</div>
-          </div>
-          <div id="img">
-            <img
-              src="/signature.png"
-              alt="signature"
-            />
-          </div>
-          <p>Proprietor</p>
-        </div>
-      </div>
-
-      <div>
-      <div id="download-pdf">
-        <h4>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"  fill="currentColor" class="download"><path d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"></path></svg>
-          Download pdf
-        </h4>
-      </div>
+        Download PDF
+      </h4>
     </div>
-    </footer>
+  </div>
+</footer>
 
+<script type="module" src="script.js"></script>
 
-    <script type="module" src="script.js"></script>
   </body>
 </html>
